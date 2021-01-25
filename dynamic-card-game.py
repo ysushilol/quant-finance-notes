@@ -1,5 +1,13 @@
 import numpy as np
 
+# naive solution to question: A casino offers a card game with the standard 52 cards (26 red, 26 black). 
+# The cards are thoroughly shuffled and the dealer draws cards one by one. 
+# (Drawn cards are not returned to the deck). You can ask the dealer to stop at any time you like. 
+# For each red card drawn, you win 1 dollar; for each black card drawn, you lose 1 dollar. 
+# What is the optimal stopping rule in terms of maximizing expected payoff and how much are you willing to pay for this game?
+
+# base case dcg(0,r) = 0 rather than -r, because you can always choose to end the game when you find the payoff is negative.
+
 # def dcg(b,r):
 # 	if b == 0:
 # 		return 0
